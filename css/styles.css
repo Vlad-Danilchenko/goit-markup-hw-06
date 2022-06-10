@@ -459,7 +459,7 @@ body {
     border-radius: 4px;
     border: 0px;
     padding: 10px 32px;
-    min-width: 200px;
+    /* min-width: 200px; */
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;    
@@ -618,6 +618,22 @@ body {
 }
 
 
+.subscription{
+   padding-top: 12px;
+   margin-left: auto;
+}
+/* .subscription-button {
+   display: block;
+} */
+
+.sub-icon{
+   width: 30px;
+   height: 30px;
+   fill: #212121;
+}
+
+
+
 
 /* Portfolio */
 
@@ -734,6 +750,8 @@ body {
 }
 
 
+/* modal */
+
 .backdrop{
    position: fixed;
    top: 0;
@@ -765,6 +783,7 @@ body {
 
    width: 530px;
    height: 580px;
+   padding: 40px;
 
    background-color: var(--primery-bg-color);   
 }
@@ -782,4 +801,38 @@ body {
 
    background-color: #00000000;
    background-image: url(../images/svg/button-close.svg);
+}
+
+
+.form-field {
+   position: relative;
+}
+
+.form-label {
+   display: block;
+}
+
+.form-input {
+   display: block;
+   height: 40px;
+   padding-left: 42px;
+   width: 100%;
+}
+
+.icon-input {
+   position: absolute;
+   bottom: 11px;
+   left: 12px;
+
+   height: 18px;
+   width: 18px;
+   
+   fill: var(--title-text-color);
+
+}
+
+.form-input:focus + .icon-input,
+.form-input:not(:placeholder-shown) +.icon-input
+{
+   fill: var(--acent);
 }
