@@ -836,3 +836,35 @@ body {
 {
    fill: var(--acent);
 }
+
+
+/* .checkbox{
+   -webkit-appearance: none;
+   
+      -moz-appearance: none;
+   
+      appearance: none;
+
+      position: absolute;
+} */
+
+.checkbox-label{
+   display: flex;
+   align-items: center;
+   
+}
+.checkbox-icon{
+   display: inline-block;
+   width: 16px;
+   height: 15px;
+   border: 1px solid var(--title-text-color);
+   margin-right: 7px;
+}
+.checkbox:checked + .checkbox-icon{
+   background-image: url(../images/svg/check.svg);
+   background-size: contain;
+   background-origin: border-box;
+   background-color: var(--acent);
+   border-color: var(--acent);
+   border-radius: 2px;
+}  
